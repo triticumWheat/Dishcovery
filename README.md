@@ -6,7 +6,7 @@ This project is a simple, multi-page website built using native HTML, CSS, and J
 
 - Mingyuan Sun ([GitHub Profile](https://github.com/triticumWheat))
 - Keyi Zhao
-- Yiyun Sun
+- Yiyun Sun([GitHub Profile](https://github.com/MikeTheMichaelS))
 - Zhifan Zhu
 
 ## Weekly Plan

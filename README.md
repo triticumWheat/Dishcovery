@@ -1,4 +1,4 @@
-# Top Cuisine Finder
+# Dishcovery
 
 This project is a simple, multi-page website built using native HTML, CSS, and JavaScript. It introduces various cuisines from around the world and highlights restaurants related to those cuisines located around the Boston area.
 

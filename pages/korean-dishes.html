@@ -29,8 +29,14 @@
         </nav>
         <main>
             <div id="cuisine-info">
-                <div id="cuisine-gallery">
-                    <img alt="placeholder" src="../static/src/placeholder.jpeg">
+                <div class="w3-display-container" id="cuisine-gallery">
+                    <img class="cuisine-slide" alt="placeholder" src="../static/src/placeholder.jpeg">
+                    <img class="cuisine-slide" alt="placeholder" src="../static/src/placeholder.jpeg">
+                    <img class="cuisine-slide" alt="placeholder" src="../static/src/placeholder.jpeg">
+                    <button class="w3-button w3-black w3-display-left"
+                        onclick="cuisineGallery.previousImage()">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right"
+                        onclick="cuisineGallery.nextImage()">&#10095;</button>
                 </div>
                 <div id="cuisine-intro">
                     <h2>About Korean Dishes</h2>
@@ -84,7 +90,8 @@
             <p>All right resevered @Mingyuan 2025</p>
         </footer>
     </div>
-    <script src="../static/js/japanese_dishes.js"></script>
+    <script src="../static/js/photo-gallery.js"></script>
+    <script src="../static/js/korean-dishes.js"></script>
 </body>
 
 </html>

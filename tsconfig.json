@@ -1,11 +1,10 @@
 {
     "compilerOptions": {
         /* Base Options: */
-        "esModuleInterop": true,
+        "esModuleInterop": false,
         "skipLibCheck": true,
         "target": "ES6",
         "allowJs": true,
-        "resolveJsonModule": true,
         "moduleDetection": "force",
         "isolatedModules": true,
         "verbatimModuleSyntax": false,
@@ -14,7 +13,7 @@
         "noUncheckedIndexedAccess": false,
         "noImplicitOverride": true,
         /* If transpiling with TypeScript: */
-        "module": "NodeNext",
+        "module": "ESNext",
         "outDir": "build",
         "sourceMap": false,
         /* If your code runs in the DOM: */
@@ -23,9 +22,9 @@
             "dom",
             "dom.iterable",
             "ES6"
-        ],
+        ]
     },
     "include": [
         "typescript-src/**/*"
-    ],
+    ]
 }

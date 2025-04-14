@@ -1,3 +1,4 @@
+// Created By: Yiyun Sun (yiyunsun@bu.edu)
 import { CuisineGallery, RestaurantGallery } from "./photo-gallery.js";
 
 const cuisineGalleryElement = document.getElementById("cuisine-info") as HTMLDivElement;

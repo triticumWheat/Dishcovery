@@ -6,7 +6,7 @@
 #page-wrapper {
     width: 80vw;
     margin: 0 auto;
-    background-color: khaki;
+    background-color: #F2E2B1;
 }
 
 body {
@@ -14,10 +14,11 @@ body {
     color: #333;
     padding: 2%;
     height: 100vh;
+    line-height: 1.5;
 }
 
 header {
-    background-color: #f7b733;
+    background-color: #BDB395;
     color: white;
     padding: 2%;
     text-align: center;
@@ -25,7 +26,7 @@ header {
 
 nav ul {
     list-style: none;
-    background-color: #e67e22;
+    background-color: #D5C7A3;
     text-align: center;
     padding: 1% 0;
 }
@@ -54,7 +55,7 @@ nav ul li a {
 }
 
 img{
-    width: 80%;
+    width: 50%;
 }
 
 .dish {
@@ -89,9 +90,24 @@ img{
 }
 
 footer {
-    background-color: #f7b733;
+    background-color: #BDB395;
     margin-top: 4%;
     text-align: center;
     font-size: 15px;
     color: white;
+}
+
+footer {
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#time-date{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
 }

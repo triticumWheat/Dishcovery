@@ -30,29 +30,72 @@
             </ul>
         </nav>
         <main>
+            <div id="cuisine-description">
+                <h2>About Korean Dishes</h2>
+                <p>
+                    Korean cuisine, known as hansik, is a traditional style of cooking that highlights bold flavors,
+                    fermented ingredients, and a harmonious balance of textures. Rooted in centuries of history and
+                    Confucian principles, hansik reflects Korea's deep appreciation for seasonality and communal
+                    dining.
+                    Signature dishes such as kimchi, bibimbap, and bulgogi showcase vibrant flavors and
+                    nutrient-rich
+                    ingredients. Recognized globally for its health benefits and cultural significance, Korean
+                    cuisine
+                    is not only about taste but also about tradition, well-being, and shared experiences.
+                </p>
+            </div>
+
             <div id="cuisine-info">
                 <div class="w3-display-container" id="cuisine-gallery">
                     <img class="cuisine-slide" alt="placeholder" src="../static/src/placeholder.jpeg">
                     <img class="cuisine-slide" alt="placeholder" src="../static/src/placeholder.jpeg">
                     <img class="cuisine-slide" alt="placeholder" src="../static/src/placeholder.jpeg">
-                    <button class="w3-button w3-black w3-display-left"
-                        onclick="cuisineGallery.previousImage()">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right"
-                        onclick="cuisineGallery.nextImage()">&#10095;</button>
+                    <button class="w3-button w3-black w3-display-left" id="cuisine-left">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" id="cuisine-right">&#10095;</button>
                 </div>
                 <div id="cuisine-intro">
-                    <h2>About Korean Dishes</h2>
-                    <p>
-                        Korean cuisine, known as hansik, is a traditional style of cooking that highlights bold flavors,
-                        fermented ingredients, and a harmonious balance of textures. Rooted in centuries of history and
-                        Confucian principles, hansik reflects Korea's deep appreciation for seasonality and communal
-                        dining.
-                        Signature dishes such as kimchi, bibimbap, and bulgogi showcase vibrant flavors and
-                        nutrient-rich
-                        ingredients. Recognized globally for its health benefits and cultural significance, Korean
-                        cuisine
-                        is not only about taste but also about tradition, well-being, and shared experiences.
-                    </p>
+                    <div class="cuisine" id="bibimbap">
+                        <h2>Bibimbap</h2>
+                        <p>
+                            Bibimbap is one of the most iconic and beloved dishes in Korean cuisine.
+                            It typically consists of warm rice topped with an assortment of sautéed vegetables,
+                            marinated meat,
+                            a fried or raw egg, and a flavorful gochujang (red chili paste) sauce.
+                            There are many variations of bibimbap, including dolsot bibimbap (served in a hot stone bowl
+                            for a
+                            crispy rice texture) and jeonju bibimbap (a renowned regional specialty with a rich
+                            history).
+                            Known for its vibrant colors and balanced flavors, bibimbap embodies the harmony of Korean
+                            cuisine,
+                            making it a popular dish both in casual meals and fine dining experiences worldwide.
+                        </p>
+                        <a href="http://yamato02116.com/">Show one example</a>
+                    </div>
+                    <div class="cuisine" id="bulgogi">
+                        <h2>Bulgogi</h2>
+                        <p>
+                            Bulgogi is a classic Korean dish that features thinly sliced beef marinated in a
+                            savory-sweet sauce made from soy sauce, garlic, sugar, sesame oil, and other seasonings. The
+                            name "bulgogi" literally means "fire meat," referring to the traditional method of grilling
+                            the meat over an open flame. Known for its tender texture and rich, flavorful taste, bulgogi
+                            is often served with rice, lettuce wraps, and a variety of side dishes. It's a
+                            beloved staple in Korean cuisine and a popular choice for Korean BBQ around the world.
+                        </p>
+                    </div>
+                    <div class="cuisine" id="kimchi">
+                        <h2>Kimchi</h2>
+                        <p>
+                            Kimchi is a traditional Korean side dish made from fermented vegetables, primarily napa
+                            cabbage and radishes, seasoned with a variety of spices and ingredients such as garlic,
+                            ginger,
+                            chili pepper, and fish sauce. Known for its bold flavors and health benefits, kimchi is a
+                            staple in Korean cuisine and is often served with almost every meal. The fermentation
+                            process
+                            not only enhances the taste but also provides probiotics that are beneficial for gut health.
+                            With countless regional variations and recipes, kimchi has become a symbol of Korean culture
+                            and culinary heritage, enjoyed both locally and internationally.
+                        </p>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -61,9 +104,8 @@
                     <img class="restaurant-photo" alt="placeholder" src="../static/src/placeholder.jpeg">
                     <img class="restaurant-photo" alt="placeholder" src="../static/src/placeholder.jpeg">
                     <img class="restaurant-photo" alt="placeholder" src="../static/src/placeholder.jpeg">
-                    <button class="w3-button w3-black w3-display-left" id="restaurant-left" onclick="">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" id="restaurant-right"
-                        onclick="">&#10095;</button>
+                    <button class="w3-button w3-black w3-display-left" id="restaurant-left">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" id="restaurant-right">&#10095;</button>
                 </div>
                 <div id="restaurant-intro">
                     <div class="restaurant" id="bibimbap">

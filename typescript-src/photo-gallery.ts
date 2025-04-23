@@ -17,8 +17,8 @@ class Gallery {
         if (this.images[this.currentImage] !== undefined) {
             this.images[this.currentImage].style.display = "inline";
         }
-        imgPlace.querySelector("#restaurant-left")?.addEventListener("click", () => this.previousImage());
-        imgPlace.querySelector("#restaurant-right")?.addEventListener("click", () => this.nextImage());
+        imgPlace.querySelector(`#${description}-left`)?.addEventListener("click", () => this.previousImage());
+        imgPlace.querySelector(`#${description}-right`)?.addEventListener("click", () => this.nextImage());
 
         this.descriptions = Array.from(descPlace.querySelectorAll("div." + description)) as HTMLDivElement[];
         this.descriptions.forEach((desc) => (desc.style.display = "none"));

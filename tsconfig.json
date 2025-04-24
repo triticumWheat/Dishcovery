@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        /* Base Options: */
+        "esModuleInterop": false,
+        "skipLibCheck": true,
+        "target": "ES6",
+        "allowJs": true,
+        "moduleDetection": "force",
+        "isolatedModules": true,
+        "verbatimModuleSyntax": false,
+        /* Strictness */
+        "strict": true,
+        "noUncheckedIndexedAccess": false,
+        "noImplicitOverride": true,
+        /* If transpiling with TypeScript: */
+        "module": "ESNext",
+        "outDir": "build",
+        "sourceMap": false,
+        /* If your code runs in the DOM: */
+        "lib": [
+            "es2022",
+            "dom",
+            "dom.iterable",
+            "ES6"
+        ]
+    },
+    "include": [
+        "typescript-src/**/*"
+    ]
+}

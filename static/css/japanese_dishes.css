@@ -1,0 +1,212 @@
+/*############ Global ############*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+    font-size: calc(10px + 0.5vw);
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*############ Page Layout ############*/
+.page {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100vh);
+    transition: transform 0.8s ease;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 2% 8%;
+}
+
+.page:nth-child(2),
+.page:nth-child(4) {
+    flex-direction: row-reverse;
+}
+
+.page img {
+    max-width: 400px;
+    width: 70%;
+}
+
+.page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.page h2 {
+    font-size: calc(18px + 0.8vw);
+    margin-bottom: 1%;
+    color: black;
+}
+
+.page p {
+    font-size: calc(14px + 0.6vw);
+    margin-bottom: 1%;
+}
+
+.page a {
+    font-size: calc(14px + 0.6vw);
+    color: #003366;
+    font-weight: bold;
+}
+
+
+/*############ Page Background ############*/
+.page:nth-child(1) {
+    background-color: #98D8EF;
+}
+.page:nth-child(2) {
+    background-color: #EAE2C6;
+}
+.page:nth-child(3) {
+    background-color: #BFBBA9;
+}
+.page:nth-child(4) {
+    background-color: #ADA991;
+}
+
+
+/*############ Header ############*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 2%;
+    transition: opacity 0.4s ease;
+    font-size: calc(14px + 0.6vw);
+}
+
+.header-minimized {
+    opacity: 0;
+}
+
+header h1 {
+    font-size: calc(20px + 0.8vw);
+    margin: 0;
+}
+
+
+/*############ Navbar ############*/
+header nav {
+    margin-left: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li:hover .submenu {
+    display: flex;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    padding: 2%;
+    z-index: 999;
+    font-size: calc(14px + 0.6vw);
+}
+
+.submenu li {
+    border-bottom: 1px solid black;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    color: black;
+}
+
+
+/*############ Back to Top Button ############*/
+#back-to-top {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 4vw;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border: none;
+    border-radius: 0 0 12px 12px;
+    font-size: calc(14px + 0.6vw);
+    cursor: pointer;
+    z-index: 1001;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*############ Footer ############*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(14px + 0.6vw);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+footer.footer-visible {
+    opacity: 1;
+}

@@ -157,7 +157,6 @@ main {
         & #second-line {
             flex: 1;
             font-size: calc(20px + 0.8vw);
-            font-weight: 700;
             width: 100%;
             display: flex;
             flex-direction: row;

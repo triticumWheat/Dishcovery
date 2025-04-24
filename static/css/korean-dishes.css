@@ -1,5 +1,112 @@
 /* Created By: Yiyun Sun (yiyunsun@bu.edu) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+header {
+    flex: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#cuisine-info,
+#restaurant-info {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    margin: 2vh 0;
+    padding: 2vh 0;
+    justify-content: center;
+
+    & #cuisine-gallery,
+    #restaurant-gallery {
+        flex: 3;
+    }
+
+    & #cuisine-intro,
+    #restaurant-intro {
+        flex: 7;
+        margin: 0 2vw;
+    }
+}
+
+
+#cuisine-info button,
+#restaurant-info button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
 
 img {
-    width: 400px;
+    width: 100%;
+    max-width: 600px;
+    /* height: auto; */
+    display: block;
+}
+
+
+footer {
+    flex: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #cuisine-info,
+    #restaurant-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #cuisine-info button,
+    #restaurant-info button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }

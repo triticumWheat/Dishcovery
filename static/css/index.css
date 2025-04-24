@@ -3,8 +3,14 @@
     margin: 0;
 }
 
-main {
+body {
     height: 100vh;
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /*############ Header ############*/
@@ -21,6 +27,7 @@ header {
     padding: 3% 2%;
     transition: opacity 0.4s ease;
     font-size: calc(14px + 0.6vw);
+    flex: 0;
 }
 
 .header-minimized {
@@ -84,6 +91,135 @@ nav li:hover .submenu {
     color: black;
 }
 
+/*############ Main Content ############*/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    height: 100%;
+
+    & h1 {
+        flex: 0;
+        font-size: calc(24px + 1vw);
+        font-weight: 700;
+        margin: 2% 0;
+    }
+
+    & #pallette {
+        aspect-ratio: 1 / 1;
+        flex: 1;
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        & #first-line {
+            flex: 1;
+            font-size: calc(20px + 0.8vw);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 50%;
+            margin: 0.5vw 0;
+
+            & a {
+                flex: 1;
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
+                margin: 0 0.5vw;
+            }
+
+            & #block1 {
+                flex: 1;
+                background-color: rgba(255, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            & #block2 {
+                flex: 1;
+                background-color: rgba(0, 128, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        & #second-line {
+            flex: 1;
+            font-size: calc(20px + 0.8vw);
+            font-weight: 700;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 50%;
+            margin: 0.5vw 0;
+
+            & a {
+                flex: 1;
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
+                margin: 0 0.5vw;
+            }
+
+            & #block3 {
+                flex: 1;
+                background-color: rgba(0, 0, 255, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            & #block4 {
+                flex: 1;
+                background-color: rgba(255, 255, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#block1:hover,
+#block2:hover,
+#block3:hover,
+#block4:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    transition: background-color 0.1s ease;
+}
+
+#first-line a,
+#second-line a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+#first-line a div,
+#second-line a div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 /*############ Footer ############*/
 footer {
     width: 100%;
@@ -96,4 +232,17 @@ footer {
     font-size: calc(14px + 0.6vw);
     z-index: 1000;
     transition: opacity 0.4s ease;
+    flex: 0;
+}
+
+/* Google font section */
+
+/* <weight>: Use a value from 100 to 400
+ <uniquifier>: Use a unique and descriptive class name */
+
+.playwrite-ro-font {
+    font-family: "Playwrite RO", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }

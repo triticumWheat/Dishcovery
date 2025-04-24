@@ -63,6 +63,15 @@ img{
     opacity: 1;
 }
 
+#time-date{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    color: white;
+}
+
 /*############ Footer ############*/
 footer {
     width: 100%;

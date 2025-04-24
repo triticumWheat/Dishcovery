@@ -1,23 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="CS103 Final Website">
-    <link type="text/css" rel="stylesheet" href="static/css/base.css" />
+    <!--    <link type="text/css" rel="stylesheet" href="static/css/base.css" />-->
     <link type="text/css" rel="stylesheet" href="static/css/index.css" />
+
+    <!-- Google Font section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <!-- End of Google Font section-->
+
     <title>CS103 Final Website</title>
 </head>
+
 <body>
     <div id="page-wrapper">
-        <h1> hello world</h1>
-        <header></header>
-        <nav>
-            <li><a href="pages/japanese-dishes.html">japanese</a></li>
-            <li><a href="pages/korean-dishes.html">korean</a></li>
-        </nav>
-        <main></main>
-        <footer></footer>
+        <header id="main-header">
+            <h1>Home</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>|</li>
+                    <li>Dishes
+                        <ul class="submenu">
+                            <li><a href="pages/japanese-dishes.html">Japanese Dishes</a></li>
+                            <li><a href="pages/korean-dishes.html">Korean Dishes</a></li>
+                            <li><a href="pages/chinese-dishes.html">Chinese Dishes</a></li>
+                            <li><a href="pages/thai-dishes.html">Thai Dishes</a></li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    <li><a href="pages/credit.html">Credit</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <main>
+            <h1 class="playwrite-ro-font" id="title"> Dishcovery </h1>
+            <div id="pallette">
+                <div id="first-line">
+                    <a href="pages/japanese-dishes.html">
+                        <div id="block1">Japanese Food</div>
+                    </a>
+                    <a href="pages/korean-dishes.html">
+                        <div id="block2">Korean Food</div>
+                    </a>
+                </div>
+                <div id="second-line">
+                    <a href="pages/chinese-dishes.html">
+                        <div id="block3">Chinese Food</div>
+                    </a>
+                    <a href="pages/thai-dishes.html">
+                        <div id="block4">Thai Food</div>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+        <footer> all right reserved</footer>
     </div>
     <script src="static/js/index.js"></script>
 </body>
+
 </html>

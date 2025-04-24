@@ -7,29 +7,36 @@
     <meta charset="UTF-8">
     <meta name="description" content="CS103 Final Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../static/css/base.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/korean-dishes.css" />
     <title>CS103 Final Website</title>
 </head>
 
 <body>
     <div id="page-wrapper">
-        <header>
+        <header id="main-header">
             <h1>Dishes | Korean Dishes</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li>|</li>
+                    <li>Dishes
+                        <ul class="submenu">
+                            <li><a href="japanese-dishes.html">Japanese Dishes</a></li>
+                            <li><a href="korean-dishes.html">Korean Dishes</a></li>
+                            <li><a href="chinese-dishes.html">Chinese Dishes</a></li>
+                            <li><a href="thai-dishes.html">Thai Dishes</a></li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    <li><a href="credit.html">Credit</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a> |</li>
-                <li>Dishes |
-                    <ul class="submenu">
-                        <li><a href="japanese-dishes.html">Japanese Dishes</a></li>
-                        <li><a href="korean-dishes.html">Korean Dishes</a></li>
-                        <li>other</li>
-                    </ul>
-                </li>
-                <li><a href="credit.html">Credit</a></li>
-            </ul>
-        </nav>
         <main>
             <div id="cuisine-description">
                 <h2>About Korean Dishes</h2>
@@ -45,20 +52,22 @@
                     is not only about taste but also about tradition, well-being, and shared experiences.
                 </p>
             </div>
-
             <div id="cuisine-info">
                 <div class="w3-display-container" id="cuisine-gallery">
                     <a href="./credit.html#korean-bibimbap">
-                        <img class="cuisine-slide" alt="bibimbap" src="../static/src/korean/bibimbap.jpg">
+                        <img class="cuisine-slide" alt="bibimbap" src="../static/src/korean/bibimbap1.jpg">
                     </a>
                     <a href="./credit.html#korean-bulgogi">
-                        <img class="cuisine-slide" alt="bulgogi" src="../static/src/korean/bulgogi.jpg">
+                        <img class="cuisine-slide" alt="bulgogi" src="../static/src/korean/bulgogi1.jpg">
                     </a>
                     <a href="./credit.html#korean-kimchi">
-                        <img class="cuisine-slide" alt="kimchi" src="../static/src/korean/kimchi.jpg">
+                        <img class="cuisine-slide" alt="kimchi" src="../static/src/korean/kimchi1.jpg">
                     </a>
-                    <button class="w3-button w3-black w3-display-left" id="cuisine-left">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" id="cuisine-right">&#10095;</button>
+                    <div class="button-wrapper">
+                        <button class="w3-button w3-black w3-display-left" id="cuisine-left">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" id="cuisine-right">&#10095;</button>
+                    </div>
+
                 </div>
                 <div id="cuisine-intro">
                     <div class="cuisine" id="bibimbap">
@@ -76,7 +85,6 @@
                             cuisine,
                             making it a popular dish both in casual meals and fine dining experiences worldwide.
                         </p>
-                        <a href="http://yamato02116.com/">Show one example</a>
                     </div>
                     <div class="cuisine" id="bulgogi">
                         <h2>Bulgogi</h2>
@@ -109,16 +117,18 @@
             <div id="restaurant-info">
                 <div class="w3-display-container" id="restaurant-gallery">
                     <a href="./credit.html#korean-hanmaru">
-                        <img class="restaurant-photo" alt="gamjatang" src="../static/src/korean/hanmaru.jpg">
+                        <img class="restaurant-photo" alt="gamjatang" src="../static/src/korean/hanmaru1.jpg">
                     </a>
                     <a href="./credit.html#korean-kaju">
-                        <img class="restaurant-photo" alt="tofu-soup" src="../static/src/korean/kaju.jpg">
+                        <img class="restaurant-photo" alt="tofu-soup" src="../static/src/korean/kaju1.jpg">
                     </a>
                     <a href="./credit.html#korean-bbq-chicken">
-                        <img class="restaurant-photo" alt="fried chicken" src="../static/src/korean/bbq-chicken.jpg">
+                        <img class="restaurant-photo" alt="fried chicken" src="../static/src/korean/bbq-chicken1.jpg">
                     </a>
-                    <button class="w3-button w3-black w3-display-left" id="restaurant-left">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" id="restaurant-right">&#10095;</button>
+                    <div class="button-wrapper">
+                        <button class="w3-button w3-black w3-display-left" id="restaurant-left">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" id="restaurant-right">&#10095;</button>
+                    </div>
                 </div>
                 <div id="restaurant-intro">
                     <div class="restaurant" id="hanmaru">
@@ -131,8 +141,11 @@
                             visitors seeking a genuine taste of Korea. Hanmaru is particularly praised for its hearty
                             portions and flavorful dishes, making it a must-visit for Korean food enthusiasts.
                         </p>
-                        <a href="https://www.hanmaruboston.com/">Official Website</a>
-                        <a href="https://maps.google.com/?q=Hanmaru%20Gamjatang">Google Map</a>
+                        <div class="restaurant-links">
+                            <a href="https://www.hanmaruboston.com/">Official Website</a>
+                            <a href="https://maps.google.com/?q=Hanmaru%20Gamjatang">Google Map</a>
+                        </div>
+
                     </div>
                     <div class="restaurant" id="kaju">
                         <h2>Kaju Korean Cuisine</h2>
@@ -147,8 +160,11 @@
                             providing
                             an authentic Korean dining experience.
                         </p>
-                        <a href="https://kajuallston.com/">Official Website</a>
-                        <a href="https://maps.google.com/?q=kaju%20korean%20cuisine">Google Map</a>
+                        <div class="restaurant-links">
+                            <a href="https://kajuallston.com/">Official Website</a>
+                            <a href="https://maps.google.com/?q=kaju%20korean%20cuisine">Google Map</a>
+                        </div>
+
                     </div>
                     <div class="restaurant" id="bbq-chicken">
                         <h2>bb.q chicken</h2>
@@ -160,8 +176,11 @@
                             With its emphasis on quality ingredients and unique cooking techniques, bb.q chicken has
                             gained a loyal following among Korean food enthusiasts and fried chicken lovers alike.
                         </p>
-                        <a href="https://bbqchicken.com/">Official Website</a>
-                        <a href="https://maps.google.com/?q=bbq%20chicken">Google Map</a>
+                        <div class="restaurant-links">
+                            <a href="https://bbqchicken.com/">Official Website</a>
+                            <a href="https://maps.google.com/?q=bbq%20chicken">Google Map</a>
+                        </div>
+
                     </div>
                 </div>
             </div>

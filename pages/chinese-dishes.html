@@ -4,62 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="CS103 Final Website">
-    <link type="text/css" rel="stylesheet" href="chinese-dishes.css" />
-    <link type="text/css" rel="stylesheet" href="../static/css/[TODO].css" />
+    <link type="text/css" rel="stylesheet" href="../static/css/chinese-dishes.css" />
     <title>CS103 Final Website</title>
 </head>
 
 <body>
     <div id="page-wrapper">
-        <header>
-            <h1>Dishes | Chinese </h1>
+        <header id="main-header">
+            <h1>Dishes | Chinese Dishes</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li>|</li>
+                    <li>Dishes
+                        <ul class="submenu">
+                            <li><a href="japanese-dishes.html">Japanese Dishes</a></li>
+                            <li><a href="korean-dishes.html">Korean Dishes</a></li>
+                            <li><a href="chinese-dishes.html">Chinese Dishes</a></li>
+                            <li><a href="thai-dishes.html">Thai Dishes</a></li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    <li><a href="credit.html">Credit</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a> |</li>
-                <li>Dishes |
-                    <ul class="submenu">
-                        <li><a href="japanese-dishes.html">Japanese Dishes</a></li>
-                        <li><a href="korean-dishes.html">Korean Dishes</a></li>
-                        <li><a href="chinese-dishes.html">Chinese Dishes</a></li>
-                        <li><a href="thai-dishes.html">Thai Dishes</a></li>
-                    </ul>
-                </li>
-                <li><a href="credit.html">Credit</a></li>
-            </ul>
-        </nav>
         <main>
             <div id="cuisine-intro">
                 <h2>About Chinese Dishes</h2>
                 <div id="cuisine-content">
                     <p>
-                        Chinese cuisine known as zhongcan, is a traditional style of cooking that emphasizes diverse flavors, meticulous techniques, and the philosophy of balance.
-                        Rooted in thousands of years of history and deeply influenced by Confucianism, Taoism, and regional customs, zhōngcān reflects China’s rich cultural heritage and respect for harmony between taste, nutrition, and aesthetics.
-                        Signature dishes such as Peking Duck, mapo tofu, and xiao long bao highlight the variety of regional styles—from the bold spice of Sichuan to the delicate freshness of Cantonese cooking.
-                        Celebrated globally for its complexity, symbolism, and communal nature, Chinese cuisine is not only a culinary experience but also a reflection of history, family, and tradition.
+                        Chinese cuisine known as zhongcan, is a traditional style of cooking that emphasizes diverse
+                        flavors, meticulous techniques, and the philosophy of balance.
+                        Rooted in thousands of years of history and deeply influenced by Confucianism, Taoism, and
+                        regional customs, zhōngcān reflects China's rich cultural heritage and respect for harmony
+                        between taste, nutrition, and aesthetics.
+                        Signature dishes such as Peking Duck, mapo tofu, and xiao long bao highlight the variety of
+                        regional styles—from the bold spice of Sichuan to the delicate freshness of Cantonese cooking.
+                        Celebrated globally for its complexity, symbolism, and communal nature, Chinese cuisine is not
+                        only a culinary experience but also a reflection of history, family, and tradition.
                     </p>
-                    <img alt="zhōngcān" src="src/chinese/zhongcan.png">
+                    <img alt="zhōngcān" src="../static/src/chinese/zhongcan.png">
                 </div>
             </div>
             <hr>
             <h5>Click the image to order on Uber Eats.</h5>
             <div id="cuisine">
                 <div class="dish">
-                    <a href="https://www.ubereats.com/store/mala-%E4%B8%80%E9%BA%BB%E4%B8%80%E8%BE%A3/N5alN7_VW8qyrstG4tADgg?srsltid=AfmBOopCTKYhEJDrbLO_0lfd-pRehtm5k6uP89_7cKZzkkDPMP4mRCbM<img src=">
-                       <img src="src/chinese/spicy_dry_pot.jpg" alt="Spicy Dry Pot">
+                    <a
+                        href="https://www.ubereats.com/store/mala-%E4%B8%80%E9%BA%BB%E4%B8%80%E8%BE%A3/N5alN7_VW8qyrstG4tADgg?srsltid=AfmBOopCTKYhEJDrbLO_0lfd-pRehtm5k6uP89_7cKZzkkDPMP4mRCbM<img src=">
+                        <img src="../static/src/chinese/spicy_dry_pot.jpg" alt="Spicy Dry Pot">
                     </a>
                     <h4>Spicy Dry Pot</h4>
                 </div>
                 <div class="dish">
-                    <a href="https://www.ubereats.com/store/my-happy-hunan-kitchen-%E7%AD%B7%E4%B9%90%E6%B9%98%E8%81%9A/Q0bGPsCTQBOEvqBFKnYIyw?srsltid=AfmBOopfEYa1iYXlIrwZopq2RTgnpKzzOXngIi5pT2avUV9a1wKuEs6L">
-                    <img src="src/chinese/stewed_tofu.png" alt="Stewed Tofu with Duck Egg Yolk and Pork Floss">
+                    <a
+                        href="https://www.ubereats.com/store/my-happy-hunan-kitchen-%E7%AD%B7%E4%B9%90%E6%B9%98%E8%81%9A/Q0bGPsCTQBOEvqBFKnYIyw?srsltid=AfmBOopfEYa1iYXlIrwZopq2RTgnpKzzOXngIi5pT2avUV9a1wKuEs6L">
+                        <img src="../static/src/chinese/stewed_tofu.png"
+                            alt="Stewed Tofu with Duck Egg Yolk and Pork Floss">
                     </a>
                     <h4>Stewed Tofu with Duck Egg Yolk and Pork Floss</h4>
                 </div>
                 <div class="dish">
-                    <a href="https://www.ubereats.com/store/hao-shi-guang-%E5%A5%BD%E9%A3%9F%E5%85%89/1JmXDedPWx6LHkxohooPIg?srsltid=AfmBOooej_BWKswJL7xfJ7xQHqECSVR8rZsGucWTtQlGg5KgxpEVDEoA">
-                    <img src="src/chinese/mao_xue_wang.png" alt="Traditional Mao Xue Wang">
-                    <h4>Traditional Mao Xue Wang</h4>
+                    <a
+                        href="https://www.ubereats.com/store/hao-shi-guang-%E5%A5%BD%E9%A3%9F%E5%85%89/1JmXDedPWx6LHkxohooPIg?srsltid=AfmBOooej_BWKswJL7xfJ7xQHqECSVR8rZsGucWTtQlGg5KgxpEVDEoA">
+                        <img src="../static/src/chinese/mao_xue_wang.png" alt="Traditional Mao Xue Wang">
+                        <h4>Traditional Mao Xue Wang</h4>
                     </a>
                 </div>
             </div>
@@ -72,11 +87,19 @@
                         <h2>Restaurant: Mala Restaurant</h2>
                         <h3>Spicy Dry Pot</h3>
                         <p>
-                            If you're in the mood for something spicy, cozy, and totally customizable, head to Mala Restaurant in Boston. Their spicy dry pot is a fan favorite—and for good reason. The large portion lets you mix and match up to six veggies (shoutout to all the veggie lovers!). Top picks? Bamboo shoots, cauliflower, and seaweed—they soak up all that flavor so well.
+                            If you're in the mood for something spicy, cozy, and totally customizable, head to Mala
+                            Restaurant in Boston. Their spicy dry pot is a fan favorite—and for good reason. The large
+                            portion lets you mix and match up to six veggies (shoutout to all the veggie lovers!). Top
+                            picks? Bamboo shoots, cauliflower, and seaweed—they soak up all that flavor so well.
 
-                            Want to throw in some meat? Pork belly and sliced beef are solid. The duck blood? A bit on the chewy side, so maybe skip that one. Overall though, it’s not trying to reinvent the wheel—it’s just a good, solid dry pot that hits right when you’re craving that familiar, bold flavor. Especially if you’ve been missing the taste of home.
+                            Want to throw in some meat? Pork belly and sliced beef are solid. The duck blood? A bit on
+                            the chewy side, so maybe skip that one. Overall though, it's not trying to reinvent the
+                            wheel—it's just a good, solid dry pot that hits right when you're craving that familiar,
+                            bold flavor. Especially if you've been missing the taste of home.
 
-                            It’s not just spicy—it’s smoky, savory, and full of that wok-fried aroma that makes your mouth water before you even dig in. Whether you’re new to dry pot or already obsessed, this one’s a comforting, no-fail option.
+                            It's not just spicy—it's smoky, savory, and full of that wok-fried aroma that makes your
+                            mouth water before you even dig in. Whether you're new to dry pot or already obsessed, this
+                            one's a comforting, no-fail option.
                         </p>
                         <a href="https://www.yelp.com/biz/mala-restaurant-boston">Mala Restaurant</a>
                     </div>
@@ -84,23 +107,37 @@
                         <h2>Restaurant: My Happy Hunan Kitchen</h2>
                         <h3>Stewed Tofu with Duck Egg Yolk and Pork Floss</h3>
                         <p>
-                            This dish is a total five-star favorite and a must-order every time I visit My Happy Hunan Kitchen in Boston. It might remind you of crab tofu at first glance, but the flavor combo of rich salted duck egg yolk and fluffy pork floss makes it something totally unique.
+                            This dish is a total five-star favorite and a must-order every time I visit My Happy Hunan
+                            Kitchen in Boston. It might remind you of crab tofu at first glance, but the flavor combo of
+                            rich salted duck egg yolk and fluffy pork floss makes it something totally unique.
 
-                            The tofu is soft and silky, soaked in that creamy, savory egg yolk sauce. Topped with pork floss, every bite is packed with umami and just the right touch of sweetness. It’s pure comfort food—and absolutely perfect over a bowl of rice.
+                            The tofu is soft and silky, soaked in that creamy, savory egg yolk sauce. Topped with pork
+                            floss, every bite is packed with umami and just the right touch of sweetness. It's pure
+                            comfort food—and absolutely perfect over a bowl of rice.
 
-                            Whether you’re here for a cozy solo meal or sharing dishes with friends, this one’s dangerously addictive. Once you start, you won’t want to stop.
+                            Whether you're here for a cozy solo meal or sharing dishes with friends, this one's
+                            dangerously addictive. Once you start, you won't want to stop.
                         </p>
-                        <a href="https://www.yelp.com/biz/my-happy-hunan-kitchen-%E7%AD%B7%E4%B9%90%E6%B9%98%E8%81%9A-brighton">My Happy Hunan Kitchen</a>
+                        <a
+                            href="https://www.yelp.com/biz/my-happy-hunan-kitchen-%E7%AD%B7%E4%B9%90%E6%B9%98%E8%81%9A-brighton">My
+                            Happy Hunan Kitchen</a>
                     </div>
                     <div class="restaurant" id="Hao Shi Guang">
                         <h2>Restaurant: Hao Shi Guang</h2>
                         <h3>Traditional Mao Xue Wang</h3>
                         <p>
-                            If you're into bold, spicy, bring-on-the-heat kind of dishes, HaoShiGuang’s Traditional Mao Xue Wang is gonna be your new obsession. This dish is the real deal—loaded with all the classic ingredients like duck blood, beef tripe, tofu skin, spam, and more, all swimming in a deep red, fiery broth that’s full of Sichuan peppercorn numbing goodness.
+                            If you're into bold, spicy, bring-on-the-heat kind of dishes, HaoShiGuang's Traditional Mao
+                            Xue Wang is gonna be your new obsession. This dish is the real deal—loaded with all the
+                            classic ingredients like duck blood, beef tripe, tofu skin, spam, and more, all swimming in
+                            a deep red, fiery broth that's full of Sichuan peppercorn numbing goodness.
 
-                            It’s rich, it’s spicy, and it smells amazing the second it hits the table. The portion is super generous too—perfect for sharing (or keeping to yourself if you're really hungry). Whether you're craving something super flavorful on a cold day or just want a hardcore Sichuan experience, this dish brings the heat and the satisfaction.
+                            It's rich, it's spicy, and it smells amazing the second it hits the table. The portion is
+                            super generous too—perfect for sharing (or keeping to yourself if you're really hungry).
+                            Whether you're craving something super flavorful on a cold day or just want a hardcore
+                            Sichuan experience, this dish brings the heat and the satisfaction.
 
-                            Pro tip: don’t forget to order a bowl of rice to soak up that spicy broth—you’ll thank us later.
+                            Pro tip: don't forget to order a bowl of rice to soak up that spicy broth—you'll thank us
+                            later.
 
                         </p>
                         <a href="https://www.yelp.com/biz/hao-shi-guang-boston">Hao Shi Guang</a>
@@ -113,7 +150,6 @@
             <p>&#169; All right reserved by Keyi Zhao</p>
         </footer>
     </div>
-    <script src=></script>
 </body>
 
 </html>

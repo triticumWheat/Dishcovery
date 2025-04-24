@@ -3,8 +3,9 @@
     margin: 0;
 }
 
-main {
+main{
     height: 100vh;
+    font-family: Arial, sans-serif;
 }
 /*############ Header ############*/
 header {

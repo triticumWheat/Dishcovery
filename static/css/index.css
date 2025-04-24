@@ -137,18 +137,20 @@ main {
 
             & #block1 {
                 flex: 1;
-                background-color: rgba(255, 0, 0, 0.6);
+                background-color: rgba(255, 0, 0, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
             }
 
             & #block2 {
                 flex: 1;
-                background-color: rgba(0, 128, 0, 0.6);
+                background-color: rgba(0, 128, 0, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
             }
         }
 
@@ -172,38 +174,44 @@ main {
 
             & #block3 {
                 flex: 1;
-                background-color: rgba(0, 0, 255, 0.6);
+                background-color: rgba(0, 0, 255, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
             }
 
             & #block4 {
                 flex: 1;
-                background-color: rgba(255, 255, 0, 0.6);
+                background-color: rgba(255, 255, 0, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
             }
         }
     }
-
-
 }
 
-/* 让 a 标签填满父容器并可继承高度 */
+#block1:hover,
+#block2:hover,
+#block3:hover,
+#block4:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    transition: background-color 0.1s ease;
+}
+
 #first-line a,
 #second-line a {
     height: 100%;
     width: 100%;
     display: flex;
-    /* 让子元素居中 */
     text-decoration: none;
 }
 
-/* 让 block div 填满 a */
-#first-line>a>div,
-#second-line>a>div {
+#first-line a div,
+#second-line a div {
     flex: 1;
     display: flex;
     justify-content: center;

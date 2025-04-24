@@ -4,15 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="CS103 Final Website">
-  <link type="text/css" rel="stylesheet" href="static/css/base.css" />
-  <!--  <link type="text/css" rel="stylesheet" href="static/css/index.css" />-->
+  <link type="text/css" rel="stylesheet" href="../static/css/credit.css" />
   <title>CS103 Final Website</title>
 </head>
 
+
 <body>
   <div id="page-wrapper">
-    <header></header>
-    <nav></nav>
+    <header id="main-header">
+      <h1>Credit</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>|</li>
+          <li>Dishes
+            <ul class="submenu">
+              <li><a href="japanese-dishes.html">Japanese Dishes</a></li>
+              <li><a href="korean-dishes.html">Korean Dishes</a></li>
+              <li><a href="chinese-dishes.html">Chinese Dishes</a></li>
+              <li><a href="thai-dishes.html">Thai Dishes</a></li>
+            </ul>
+          </li>
+          <li>|</li>
+          <li><a href="credit.html">Credit</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
     <main>
       <h3>Credits</h3>
       <div id="thai-dishes">
@@ -141,7 +163,7 @@
         </p>
       </div>
     </main>
-    <footer></footer>
+    <footer><p>&#169 all right reserved</p></footer>
   </div>
   <script src="static/js/index.js"></script>
 </body>

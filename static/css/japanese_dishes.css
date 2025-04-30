@@ -9,7 +9,7 @@
 body {
     font-family: sans-serif;
     overflow: hidden;
-    font-size: calc(16px + 0.3vw);
+    font-size: calc(18px + 0.5vw);
 }
 
 main {
@@ -54,18 +54,15 @@ main {
 }
 
 .page h2 {
-    font-size: calc(18px + 0.8vw);
     margin-bottom: 1%;
     color: black;
 }
 
 .page p {
-    font-size: calc(16px + 0.3vw);
     margin-bottom: 1%;
 }
 
 .page a {
-    font-size: calc(16px + 0.3vw);
     color: #003366;
     font-weight: bold;
 }

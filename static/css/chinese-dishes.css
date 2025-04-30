@@ -9,6 +9,37 @@
     background-color: bisque;
     justify-content: center;
     padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: calc(16px + 0.3vw);
+}
+
+#clock {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: calc(18px + 0.8vw);
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+#clock h3, #clock h5 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+
+}
+
+#clock h3{
+    color: bisque;
+}
+
+#clock h5 {
+    font-size: 0.7em;
+    color: #ffd700;
 }
 
 #cuisine {
@@ -55,8 +86,40 @@
     height: auto;
 }
 
+#cuisine-intro h2 {
+    margin-bottom: 20px;
+}
+
+#cuisine-intro p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
 h5{
     color: blue;
+}
+
+h3{
+    color: gray;
+}
+
+.restaurant h2 {
+    margin-bottom: 10px;
+}
+
+.restaurant h3 {
+    margin-top: 0;
+}
+
+.restaurant ul {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+.restaurant ul li {
+    margin-bottom: 10px;
 }
 
 .dish {
@@ -114,6 +177,7 @@ h5{
 
 /*############ Header ############*/
 header {
+    position: relative;
     top: 0;
     width: 100%;
     height: 60px;
@@ -137,6 +201,39 @@ header h1 {
     margin: 0;
 }
 
+#random-picker {
+    margin: 40px auto;
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 30px;
+    font-family: "Arial", sans-serif;
+}
+
+#random-picker button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    color: white;
+    font-size: calc(14px + 0.3vw);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#random-picker button:hover {
+    background-color: pink;
+}
+
+#random-result {
+    margin-top: 20px;
+    font-size: calc(16px + 0.4vw);
+    color: lightcoral;
+}
 
 /*############ Navbar ############*/
 header nav {

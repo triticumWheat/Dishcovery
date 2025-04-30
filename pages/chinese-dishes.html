@@ -28,11 +28,7 @@
                     <li><a href="credit.html">Credit</a></li>
                 </ul>
             </nav>
-            <div id="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <div id="clock"></div>
         </header>
         <main>
             <div id="cuisine-intro">
@@ -51,6 +47,11 @@
                     </p>
                     <img alt="zhōngcān" src="../static/src/chinese/zhongcan.png">
                 </div>
+                <section id="random-picker">
+                    <h2>Feeling Indecisive? Let’s Pick a Dish for You!</h2>
+                    <button onclick="pickRandomDish()">🎲 Pick a Dish</button>
+                    <p id="random-result"></p>
+                </section>
             </div>
             <hr>
             <h5>Click the image to order on Uber Eats.</h5>
@@ -84,62 +85,41 @@
                 </div>
                 <div id="restaurant-intro">
                     <div class="restaurant" id="Mala Restaurant">
-                        <h2>Restaurant: Mala Restaurant</h2>
+                        <h2>Mala Restaurant</h2>
                         <h3>Spicy Dry Pot</h3>
-                        <p>
-                            If you're in the mood for something spicy, cozy, and totally customizable, head to Mala
-                            Restaurant in Boston. Their spicy dry pot is a fan favorite—and for good reason. The large
-                            portion lets you mix and match up to six veggies (shoutout to all the veggie lovers!). Top
-                            picks? Bamboo shoots, cauliflower, and seaweed—they soak up all that flavor so well.
-
-                            Want to throw in some meat? Pork belly and sliced beef are solid. The duck blood? A bit on
-                            the chewy side, so maybe skip that one. Overall though, it's not trying to reinvent the
-                            wheel—it's just a good, solid dry pot that hits right when you're craving that familiar,
-                            bold flavor. Especially if you've been missing the taste of home.
-
-                            It's not just spicy—it's smoky, savory, and full of that wok-fried aroma that makes your
-                            mouth water before you even dig in. Whether you're new to dry pot or already obsessed, this
-                            one's a comforting, no-fail option.
-                        </p>
+                        <ul>
+                            <li>Spicy, cozy, and customizable dry pot, a Boston fan favorite.</li>
+                            <li>Mix and match up to six veggies (bamboo shoots, cauliflower, seaweed).</li>
+                            <li>Add pork belly or sliced beef; duck blood is a bit chewy.</li>
+                            <li>Bold, smoky, savory flavors with a wok-fried aroma.</li>
+                            <li>Perfect for newcomers and dry pot lovers alike.</li>
+                        </ul>
                         <a href="https://www.yelp.com/biz/mala-restaurant-boston">Mala Restaurant</a>
                     </div>
                     <div class="restaurant" id="My Happy Hunan Kitchen">
-                        <h2>Restaurant: My Happy Hunan Kitchen</h2>
+                        <h2>My Happy Hunan Kitchen</h2>
                         <h3>Stewed Tofu with Duck Egg Yolk and Pork Floss</h3>
-                        <p>
-                            This dish is a total five-star favorite and a must-order every time I visit My Happy Hunan
-                            Kitchen in Boston. It might remind you of crab tofu at first glance, but the flavor combo of
-                            rich salted duck egg yolk and fluffy pork floss makes it something totally unique.
-
-                            The tofu is soft and silky, soaked in that creamy, savory egg yolk sauce. Topped with pork
-                            floss, every bite is packed with umami and just the right touch of sweetness. It's pure
-                            comfort food—and absolutely perfect over a bowl of rice.
-
-                            Whether you're here for a cozy solo meal or sharing dishes with friends, this one's
-                            dangerously addictive. Once you start, you won't want to stop.
-                        </p>
+                        <ul>
+                            <li>A must-order dish at My Happy Hunan Kitchen in Boston.</li>
+                            <li>Flavor combo of rich salted duck egg yolk and fluffy pork floss.</li>
+                            <li>Soft, silky tofu soaked in creamy, savory egg yolk sauce.</li>
+                            <li>Perfect balance of umami and a hint of sweetness.</li>
+                            <li>Ideal for a cozy solo meal or sharing with friends.</li>
+                        </ul>
                         <a
                             href="https://www.yelp.com/biz/my-happy-hunan-kitchen-%E7%AD%B7%E4%B9%90%E6%B9%98%E8%81%9A-brighton">My
                             Happy Hunan Kitchen</a>
                     </div>
                     <div class="restaurant" id="Hao Shi Guang">
-                        <h2>Restaurant: Hao Shi Guang</h2>
+                        <h2>Hao Shi Guang</h2>
                         <h3>Traditional Mao Xue Wang</h3>
-                        <p>
-                            If you're into bold, spicy, bring-on-the-heat kind of dishes, HaoShiGuang's Traditional Mao
-                            Xue Wang is gonna be your new obsession. This dish is the real deal—loaded with all the
-                            classic ingredients like duck blood, beef tripe, tofu skin, spam, and more, all swimming in
-                            a deep red, fiery broth that's full of Sichuan peppercorn numbing goodness.
-
-                            It's rich, it's spicy, and it smells amazing the second it hits the table. The portion is
-                            super generous too—perfect for sharing (or keeping to yourself if you're really hungry).
-                            Whether you're craving something super flavorful on a cold day or just want a hardcore
-                            Sichuan experience, this dish brings the heat and the satisfaction.
-
-                            Pro tip: don't forget to order a bowl of rice to soak up that spicy broth—you'll thank us
-                            later.
-
-                        </p>
+                        <ul>
+                            <li>Bold, spicy dish loaded with classic ingredients like duck blood, beef tripe, and tofu skin.</li>
+                            <li>Deep red, fiery broth packed with Sichuan peppercorn numbing flavor.</li>
+                            <li>Rich aroma that fills the table the moment it arrives.</li>
+                            <li>Super generous portion—perfect for sharing or solo indulgence.</li>
+                            <li>Pro tip: Order a bowl of rice to soak up the spicy broth.</li>
+                        </ul>
                         <a href="https://www.yelp.com/biz/hao-shi-guang-boston">Hao Shi Guang</a>
                     </div>
                 </div>
@@ -150,6 +130,7 @@
             <p>&#169; All right reserved by Keyi Zhao</p>
         </footer>
     </div>
+    <script src="../static/js/chinese-dishes.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+/* this part is done by Mingyuan Sun (mingyuan@bu.edu) */
+
 /*############ Global ############*/
 * {
     margin: 0;
@@ -7,7 +9,7 @@
 body {
     font-family: sans-serif;
     overflow: hidden;
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(18px + 0.5vw);
 }
 
 main {
@@ -18,7 +20,7 @@ main {
 }
 
 
-/*############ Page Layout ############*/
+/*############ Page ############*/
 .page {
     height: 100vh;
     width: 100vw;
@@ -52,24 +54,21 @@ main {
 }
 
 .page h2 {
-    font-size: calc(18px + 0.8vw);
     margin-bottom: 1%;
     color: black;
 }
 
 .page p {
-    font-size: calc(14px + 0.6vw);
     margin-bottom: 1%;
 }
 
 .page a {
-    font-size: calc(14px + 0.6vw);
     color: #003366;
     font-weight: bold;
 }
 
 
-/*############ Page Background ############*/
+/*############ Page Color ############*/
 .page:nth-child(1) {
     background-color: #98D8EF;
 }

@@ -6,7 +6,21 @@
 main{
     height: 100vh;
     font-family: Arial, sans-serif;
+    padding: 2%;
 }
+
+main div {
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+#page-wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: lightgray;
+}
+
 /*############ Header ############*/
 header {
     top: 0;

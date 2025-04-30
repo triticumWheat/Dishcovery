@@ -30,7 +30,7 @@ This project is a simple, multi-page website built using native HTML, CSS, and J
 - Chinese Dishes HTML + CSS + JS
 - Design Basic HTML Template for each page
 - Color Designs
-### Yifan Zhu:
+### Zhifan Zhu:
 - Thai Dishes HTML + CSS + JS
 - Credit Page Design
 - Weekly Plan Update and Readme Update
